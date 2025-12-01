@@ -1,0 +1,29 @@
+---
+layout: default
+title: Our Services
+description: Comprehensive AI and Machine Learning Services
+---
+
+<section class="page-header">
+    <div class="container">
+        <h1>Our Services</h1>
+        <p>Explore our comprehensive range of AI solutions</p>
+    </div>
+</section>
+
+<section class="services-list">
+    <div class="container">
+        {% for service in site.services %}
+        <div class="service-preview">
+            <div class="service-preview-content">
+                <h2>{{ service.title }}</h2>
+                <p>{{ service.subtitle }}</p>
+                <a href="{{ service.url | relative_url }}" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="service-preview-icon">
+                {{ service.icon }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

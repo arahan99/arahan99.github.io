@@ -1,0 +1,49 @@
+# Site settings
+title: Arahansoft
+description: Advanced AI Solutions & Services
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://arahan99.github.io" # the base hostname & protocol for your site
+email: info@arahansoft.com
+author: Arahansoft
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - check.md
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /services/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+
+# Theme
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Services
+    url: /services/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/

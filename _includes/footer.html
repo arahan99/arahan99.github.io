@@ -1,0 +1,40 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Arahansoft</h3>
+                <p>Advanced AI Solutions & Services</p>
+                <p class="footer-email">{{ site.email }}</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="{{ '/services/ai-consulting/' | relative_url }}">AI Consulting</a></li>
+                    <li><a href="{{ '/services/machine-learning/' | relative_url }}">Machine Learning</a></li>
+                    <li><a href="{{ '/services/nlp/' | relative_url }}">Natural Language Processing</a></li>
+                    <li><a href="{{ '/services/computer-vision/' | relative_url }}">Computer Vision</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="{{ '/about/' | relative_url }}">About Us</a></li>
+                    <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="https://github.com/arahan99" target="_blank" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; {{ 'now' | date: "%Y" }} Arahansoft. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
